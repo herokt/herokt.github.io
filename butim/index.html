@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>붙임 · Stickit</title>
+<meta name="description" content="홈 화면에 포스트잇처럼 붙이는 메모 앱 붙임(Stickit) 지원 페이지">
+<style>
+  :root { --bg: #F7F3EC; --card: #FFFDF8; --ink: #2B2620; --sub: #6E645A; --line: #E6DED1; --accent: #C8892A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1E1B17; --card: #26221D; --ink: #EFE9DF; --sub: #B3A897; --line: #3A342C; --accent: #E8B060; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+  header img { width: 72px; height: 72px; border-radius: 18px; }
+  h1 { font-size: 26px; margin: 0; }
+  .tag { color: var(--sub); margin: 0; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; margin-bottom: 20px; }
+  h2 { font-size: 17px; margin: 0 0 8px; }
+  ul { padding-left: 20px; margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { color: var(--sub); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>붙임 · Stickit</h1>
+      <p class="tag">홈 화면에 포스트잇처럼 붙이는 메모 · Sticky notes on your home screen</p>
+    </div>
+  </header>
+
+  <section lang="ko">
+    <h2>지원</h2>
+    <p>앱을 쓰다 궁금한 점이나 문제가 있으면 메일로 알려 주세요.<br>
+      <a href="mailto:mycrewdeveloper@gmail.com">mycrewdeveloper@gmail.com</a></p>
+    <ul>
+      <li><strong>홈 화면 위젯 붙이기</strong>: 홈 화면 빈 곳을 길게 누르고 → 위젯 → ‘붙임 메모’를 끌어다 놓으세요. 앱의 설정 옆 위젯 버튼에서도 붙일 수 있어요.</li>
+      <li><strong>위젯 크기</strong>: 붙인 위젯을 길게 누르면 크기를 바꿀 수 있어요.</li>
+      <li><strong>메모 저장</strong>: 메모는 기기에만 저장돼요. 앱을 지우면 메모도 지워져요.</li>
+    </ul>
+    <p><a href="privacy.html#ko">개인정보처리방침</a></p>
+  </section>
+
+  <section lang="en">
+    <h2>Support</h2>
+    <p>Questions or problems? Email us at
+      <a href="mailto:mycrewdeveloper@gmail.com">mycrewdeveloper@gmail.com</a></p>
+    <ul>
+      <li><strong>Add a widget</strong>: long-press an empty spot on your home screen → Widgets → drag “Stickit note”. You can also add one from the widget button in the app.</li>
+      <li><strong>Resize</strong>: long-press a widget to change its size.</li>
+      <li><strong>Your notes</strong> are stored only on your device. Uninstalling the App deletes them.</li>
+    </ul>
+    <p><a href="privacy.html#en">Privacy Policy</a></p>
+  </section>
+
+  <footer>© 2026 ToyDream</footer>
+</main>
+</body>
+</html>
