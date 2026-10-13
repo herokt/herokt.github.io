@@ -32,26 +32,30 @@
 
   <section id="ko" lang="ko">
     <h1>다같이 미끄럼 개인정보처리방침</h1>
-    <p class="date">시행일: 2026년 10월 11일</p>
+    <p class="date">시행일: 2026년 10월 13일 (이전 판: 2026년 10월 11일)</p>
     <p>ToyDream(이하 “운영자”)은 다같이 미끄럼 앱(영문명 Slide Mates, 일본어명 みんなでスベろう, 중국어명 一起滑吧, 패키지 com.herokt.slidemates, 이하 “앱”)을 운영하면서 이용자의 개인정보를 다음과 같이 처리합니다.</p>
 
     <h2>1. 처리하는 정보와 목적</h2>
     <ul>
-      <li><strong>로그인 정보</strong> (Google·Apple로 로그인한 경우에만): 계정 고유 ID, 이메일, 표시 이름. 로그인과 게임 기록 저장에 씁니다. 처리: Google Firebase Authentication.</li>
-      <li><strong>게임 기록</strong> (로그인한 경우에만): 깬 레벨과 별, 오늘의 퍼즐 기록, 눈꽃 모은 양·쓴 양, 출석·미션·별 상자·트로피 진행, 보유 테마, 본 안내, 앱이 만든 무작위 기기 이름, 마지막 저장 시각. 기기를 바꾸거나 여러 기기에서 이어서 하는 데 씁니다. 처리: Google Cloud Firestore.</li>
+      <li><strong>익명 계정 ID</strong> (모든 이용자): 앱을 처음 켤 때 이름·이메일 없이 무작위 계정 ID를 하나 만듭니다. 게임 기록 백업, 주간 빙원 순위, 아래의 이용 통계에 씁니다. 처리: Google Firebase Authentication.</li>
+      <li><strong>로그인 정보</strong> (Google·Apple로 로그인한 경우에만): 계정 고유 ID, 이메일, 표시 이름. 로그인하면 익명 계정에 연결되어 다른 기기에서도 기록을 이어 갈 수 있습니다. 처리: Google Firebase Authentication.</li>
+      <li><strong>게임 기록</strong>: 깬 레벨과 별, 오늘의 퍼즐·주간 빙원 기록, 눈꽃 모은 양·쓴 양, 출석·미션·별 상자·트로피 진행, 보유 테마, 광고 제거 구매 여부, 본 안내, 앱이 만든 무작위 기기 이름, 앱 버전·기기 종류(Android/iOS)·언어, 마지막 저장 시각. 기록 백업과 여러 기기에서 이어 하기, 고객 문의 처리에 씁니다. 처리: Google Cloud Firestore.</li>
+      <li><strong>주간 빙원 순위</strong>: 주간 빙원 점수(별·수)와 표시 이름(로그인한 경우에만, 게스트는 이름 없이 “펭귄 친구”로 표시)을 순위표에 올려 다른 이용자에게 보여 줍니다.</li>
+      <li><strong>이용 통계</strong>: 레벨 시작·클리어·실패, 힌트·건너뛰기, 공유, 광고 시청, 구매, 알림 허용 여부 같은 앱 안의 행동과 기기·앱 정보. 난이도 조정과 앱 개선에 씁니다. 처리: Google Analytics for Firebase, Google Cloud Firestore(날짜·레벨별 합계만).</li>
+      <li><strong>구매</strong>: 인앱 결제(광고 제거, 눈꽃 묶음)는 Google Play·App Store가 처리합니다. 앱은 결제 수단 정보를 받지 않고, 어떤 상품을 샀는지만 확인합니다.</li>
       <li><strong>광고</strong>: 광고 식별자(Android 광고 ID), 대략적 위치(IP 기반), 기기 정보. 광고를 보여 주고 광고 성과를 재는 데 씁니다. 처리: Google AdMob.</li>
     </ul>
-    <p>로그인은 선택입니다. 게스트로 하면 기록과 설정(소리·진동·언어 등)이 기기에만 저장되고 서버로 보내지 않습니다. 앱은 별도의 사용 통계(분석) 도구를 쓰지 않습니다. 화면 글꼴은 처음 쓸 때 Google Fonts에서 내려받을 수 있으며, 이때 기기의 IP 주소가 Google에 전달됩니다.</p>
+    <p>Google·Apple 로그인은 선택입니다. 설정(소리·진동·알림 등)은 기기에만 저장됩니다. 알림(오늘의 퍼즐·연속 기록 알림)은 기기 안에서 예약하는 알림이며, 허용한 경우에만 보내고 설정에서 끌 수 있습니다. 화면 글꼴은 처음 쓸 때 Google Fonts에서 내려받을 수 있으며, 이때 기기의 IP 주소가 Google에 전달됩니다.</p>
 
     <h2>2. 광고와 동의</h2>
     <p>앱은 Google AdMob 광고(배너, 전면, 보상형)를 보여 줍니다. 유럽경제지역(EEA)·영국·스위스 이용자에게는 앱을 켤 때 개인정보 동의 창이 뜨고, 동의 여부에 따라 맞춤형 또는 비맞춤형 광고가 나옵니다. 동의는 앱의 설정 → 광고 개인정보 설정에서 언제든 바꿀 수 있습니다. iOS에서는 앱 추적 투명성(ATT) 권한을 요청하지 않으며 광고 식별자(IDFA)를 쓰지 않습니다.</p>
     <p>Google의 데이터 사용 방식: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
 
     <h2>3. 보관 기간과 삭제</h2>
-    <p>로그인 정보와 게임 기록은 계정을 지울 때까지 보관합니다. 앱의 설정 → 계정(또는 홈 화면 왼쪽 위 프로필) → 계정 삭제를 누르면 계정과 클라우드의 게임 기록이 바로 지워집니다. 앱을 쓸 수 없으면 아래 연락처로 요청해 주세요(<a href="./#delete-account">계정 삭제 안내</a>). 앱을 지우면 기기에 저장된 기록과 설정도 함께 지워집니다.</p>
+    <p>계정 정보와 게임 기록은 계정을 지울 때까지 보관합니다. 이용 통계는 Google Analytics에서 2개월 뒤 지워지고, 날짜·레벨별 합계에는 개인을 알아볼 수 있는 정보가 없습니다. 앱의 설정 → 계정(또는 홈 화면 왼쪽 위 프로필) → 계정 삭제를 누르면 계정과 클라우드의 게임 기록이 바로 지워집니다. 앱을 쓸 수 없으면 아래 연락처로 요청해 주세요(<a href="./#delete-account">계정 삭제 안내</a>). 앱을 지우면 기기에 저장된 기록과 설정도 함께 지워집니다.</p>
 
     <h2>4. 제3자 제공</h2>
-    <p>위 처리 주체(Google) 외에 개인정보를 팔거나 제3자에게 제공하지 않습니다. 게임 기록은 다른 이용자에게 공개되지 않습니다.</p>
+    <p>위 처리 주체(Google, 결제는 Apple) 외에 개인정보를 팔거나 제3자에게 제공하지 않습니다. 다른 이용자에게 보이는 것은 주간 빙원 순위표의 표시 이름과 점수뿐입니다.</p>
 
     <h2>5. 아동</h2>
     <p>앱은 만 13세 미만 아동을 대상으로 하지 않으며, 알면서 아동의 개인정보를 수집하지 않습니다.</p>
@@ -65,26 +69,30 @@
 
   <section id="en" lang="en">
     <h1>Slide Mates Privacy Policy</h1>
-    <p class="date">Effective: October 11, 2026</p>
+    <p class="date">Effective: October 13, 2026 (previous version: October 11, 2026)</p>
     <p>ToyDream (the “operator”) runs the Slide Mates app (다같이 미끄럼 in Korean, みんなでスベろう in Japanese, 一起滑吧 in Chinese, package com.herokt.slidemates, the “App”) and handles personal information as follows.</p>
 
     <h2>Information we process</h2>
     <ul>
-      <li><strong>Sign-in data</strong> (only if you sign in with Google or Apple): account ID, email and display name, used to sign you in and save your progress. Processor: Google Firebase Authentication.</li>
-      <li><strong>Game progress</strong> (only if you sign in): cleared levels and stars, daily puzzle results, snowflakes earned and spent, check-in, mission, star chest and trophy progress, owned themes, seen tutorials, a random device name created by the App and the last saved time, used to continue your game on a new or another device. Processor: Google Cloud Firestore.</li>
+      <li><strong>Anonymous account ID</strong> (all users): on first launch the App creates a random account ID with no name or email. It is used to back up your progress, rank you in Weekly Ice and for the usage statistics below. Processor: Google Firebase Authentication.</li>
+      <li><strong>Sign-in data</strong> (only if you sign in with Google or Apple): account ID, email and display name. Signing in links your anonymous account so you can continue on other devices. Processor: Google Firebase Authentication.</li>
+      <li><strong>Game progress</strong>: cleared levels and stars, daily puzzle and Weekly Ice results, snowflakes earned and spent, check-in, mission, star chest and trophy progress, owned themes, whether you bought Remove Ads, seen tutorials, a random device name created by the App, app version, platform (Android/iOS), language and the last saved time, used to back up your progress, continue on other devices and answer support requests. Processor: Google Cloud Firestore.</li>
+      <li><strong>Weekly Ice leaderboard</strong>: your Weekly Ice score (stars and moves) and display name (only if signed in; guests appear without a name as “Penguin pal”) are shown to other players on the leaderboard.</li>
+      <li><strong>Usage statistics</strong>: in-app actions such as starting, clearing or failing a level, hints and skips, shares, ad views, purchases and notification permission, plus device and app info, used to tune difficulty and improve the App. Processors: Google Analytics for Firebase, Google Cloud Firestore (daily and per-level totals only).</li>
+      <li><strong>Purchases</strong>: in-app purchases (Remove Ads, snowflake packs) are processed by Google Play or the App Store. The App never receives your payment details; it only checks which products you bought.</li>
       <li><strong>Ads</strong>: advertising ID (Android Ad ID), approximate location (IP based) and device info, used to serve and measure ads. Processor: Google AdMob.</li>
     </ul>
-    <p>Signing in is optional. As a guest, your progress and settings (sound, vibration, language, etc.) stay on your device and are never sent to a server. The App does not use a separate analytics tool. Fonts may be downloaded from Google Fonts the first time they are used, which shares your device's IP address with Google.</p>
+    <p>Signing in with Google or Apple is optional. Settings (sound, vibration, notifications, etc.) stay on your device. Notifications (daily puzzle and streak reminders) are scheduled on the device, are only sent if you allow them and can be turned off in Settings. Fonts may be downloaded from Google Fonts the first time they are used, which shares your device's IP address with Google.</p>
 
     <h2>Ads and consent</h2>
     <p>The App shows Google AdMob ads (banner, interstitial and rewarded). Users in the EEA, UK and Switzerland see a consent form at launch and get personalized or non-personalized ads based on their choice, which can be changed any time in Settings → Ad privacy choices. On iOS, the App does not request App Tracking Transparency permission and does not use the advertising identifier (IDFA).</p>
     <p>How Google uses data: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
 
     <h2>Retention and deletion</h2>
-    <p>Sign-in data and game progress are kept until you delete your account. Go to Settings → Account (or the profile at the top left of the home screen) → Delete account to remove your account and cloud progress right away. If you can't use the App, contact us below (<a href="./#delete-account">how to delete your account</a>). Uninstalling the App deletes the progress and settings stored on the device.</p>
+    <p>Account data and game progress are kept until you delete your account. Usage statistics are deleted from Google Analytics after 2 months, and the daily and per-level totals contain nothing that identifies you. Go to Settings → Account (or the profile at the top left of the home screen) → Delete account to remove your account and cloud progress right away. If you can't use the App, contact us below (<a href="./#delete-account">how to delete your account</a>). Uninstalling the App deletes the progress and settings stored on the device.</p>
 
     <h2>Sharing</h2>
-    <p>We do not sell personal data or share it with third parties other than the processor above (Google). Your game progress is not shown to other players.</p>
+    <p>We do not sell personal data or share it with third parties other than the processors above (Google, and Apple for payments). The only things other players can see are your display name and score on the Weekly Ice leaderboard.</p>
 
     <h2>Children</h2>
     <p>The App is not directed to children under 13 and does not knowingly collect their personal data.</p>
