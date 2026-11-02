@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>붙임 계정 삭제 · Stickit Account Deletion</title>
+<meta name="description" content="붙임(Stickit) 계정과 동기화된 메모를 지우는 방법">
+<style>
+  :root { --bg: #F7F3EC; --card: #FFFDF8; --ink: #2B2620; --sub: #6E645A; --line: #E6DED1; --accent: #C8892A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1E1B17; --card: #26221D; --ink: #EFE9DF; --sub: #B3A897; --line: #3A342C; --accent: #E8B060; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Hiragino Sans", "Microsoft YaHei", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  nav a { color: var(--sub); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; font-size: 14px; }
+  nav a:hover { color: var(--ink); border-color: var(--accent); }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 22px; margin-bottom: 24px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 24px 0 6px; }
+  p, li { color: var(--ink); }
+  .sub { color: var(--sub); font-size: 14px; margin: 0 0 16px; }
+  ol, ul { padding-left: 22px; margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { color: var(--sub); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="#ko">한국어</a><a href="#en">English</a><a href="#ja">日本語</a><a href="#zh">中文</a><a href="./">앱 소개 · About</a></nav>
+
+  <section id="ko" lang="ko">
+    <h1>붙임 계정 삭제</h1>
+    <p class="sub">앱: 붙임 (Stickit) · 개발자: ToyDream</p>
+    <p>계정은 프리미엄 ‘여러 기기 동기화’를 켤 때 Google 또는 Apple로 로그인하면 만들어집니다. 로그인한 적이 없다면 서버에 저장된 정보가 없으므로 지울 계정도 없습니다.</p>
+
+    <h2>앱에서 지우기</h2>
+    <ol>
+      <li>붙임 앱을 열고 오른쪽 위 <strong>설정</strong>으로 들어갑니다.</li>
+      <li><strong>계정</strong> 칸에서 <strong>계정 삭제</strong>를 누릅니다.</li>
+      <li>안내를 확인하고 삭제를 누릅니다. 인터넷에 연결돼 있어야 합니다.</li>
+    </ol>
+
+    <h2>앱을 쓸 수 없을 때</h2>
+    <p><a href="mailto:mycrewdeveloper@gmail.com?subject=%EB%B6%99%EC%9E%84%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">mycrewdeveloper@gmail.com</a>으로 ‘계정 삭제 요청’과 함께 로그인에 쓴 이메일 주소(Apple의 ‘나의 이메일 가리기’를 썼다면 그 주소)와 로그인 방식(Google·Apple)을 보내 주세요. 본인 확인 뒤 30일 안에 지우고 결과를 알려 드립니다.</p>
+
+    <h2>지워지는 정보</h2>
+    <ul>
+      <li>로그인 계정 정보: 이메일 주소, 이름, 프로필 사진 주소, 로그인 방식, 이용자 식별자</li>
+      <li>서버에 동기화된 메모 전부: 글·서식·체크리스트, 꾸미기(테마·글꼴·색 등), 보드 위치·크기, 알림 시각, 보드 목록</li>
+    </ul>
+    <p>앱에서 지우면 서버의 메모를 먼저 지운 뒤 계정을 바로 지웁니다. 서비스 제공자(Google Firebase)의 백업에서는 그 제공자의 정책에 따라 지워집니다.</p>
+
+    <h2>남는 정보</h2>
+    <ul>
+      <li>이 기기의 메모는 로그인하지 않은 상태로 기기에 남습니다(서버로 보내지 않음). 필요 없으면 앱에서 지우거나 앱을 삭제하세요.</li>
+      <li>프리미엄 구매 기록은 Google Play·App Store 계정에 남으며, 운영자가 지울 수 없습니다. 계정을 지워도 프리미엄은 그대로 쓸 수 있습니다.</li>
+    </ul>
+    <p>계정을 지우지 않고 메모 일부만 지우려면, 로그인한 상태에서 앱에서 메모를 지우면 됩니다. 지운 메모는 30일 뒤 서버에서도 지워집니다.</p>
+    <p><a href="privacy.html#ko">개인정보처리방침</a></p>
+  </section>
+
+  <section id="en" lang="en">
+    <h1>Delete your Stickit account</h1>
+    <p class="sub">App: Stickit (붙임) · Developer: ToyDream</p>
+    <p>An account is created only when you sign in with Google or Apple to turn on Premium sync. If you have never signed in, nothing is stored on our servers and there is no account to delete.</p>
+
+    <h2>Delete in the app</h2>
+    <ol>
+      <li>Open Stickit and tap <strong>Settings</strong> at the top right.</li>
+      <li>Under <strong>Account</strong>, tap <strong>Delete account</strong>.</li>
+      <li>Confirm. You need an internet connection.</li>
+    </ol>
+
+    <h2>If you can't use the app</h2>
+    <p>Email <a href="mailto:mycrewdeveloper@gmail.com?subject=Stickit%20account%20deletion%20request">mycrewdeveloper@gmail.com</a> with “Account deletion request”, the email address you signed in with (your Apple relay address if you used Hide My Email) and the sign-in method (Google or Apple). We will verify the request, delete your account within 30 days and let you know.</p>
+
+    <h2>What is deleted</h2>
+    <ul>
+      <li>Account information: email address, name, profile photo URL, sign-in method and user identifier</li>
+      <li>All notes synced to the server: text, formatting and checklists, styling (theme, font, color and so on), board position and size, reminder times, and your board list</li>
+    </ul>
+    <p>Deleting in the app removes your server notes first, then your account, right away. Copies in our service provider's (Google Firebase) backups are removed under that provider's policies.</p>
+
+    <h2>What is kept</h2>
+    <ul>
+      <li>Notes on that device stay on the device as signed-out notes (never sent to the server). Delete them in the app, or uninstall the app, if you don't need them.</li>
+      <li>Your Premium purchase record stays with your Google Play or App Store account, which we cannot delete. You keep Premium after deleting your account.</li>
+    </ul>
+    <p>To delete only some notes without deleting your account, delete them in the app while signed in. Deleted notes are removed from the server after 30 days.</p>
+    <p><a href="privacy.html#en">Privacy Policy</a></p>
+  </section>
+
+  <section id="ja" lang="ja">
+    <h1>ペタッと アカウントの削除</h1>
+    <p class="sub">アプリ:ペタッと (Stickit) · 開発者:ToyDream</p>
+    <p>アカウントは、プレミアムの「複数端末の同期」をオンにして Google または Apple でログインしたときだけ作られます。ログインしたことがなければ、サーバーに保存された情報はなく、削除するアカウントもありません。</p>
+
+    <h2>アプリで削除する</h2>
+    <ol>
+      <li>ペタッとを開き、右上の<strong>設定</strong>を開きます。</li>
+      <li><strong>アカウント</strong>の<strong>アカウント削除</strong>をタップします。</li>
+      <li>確認して削除します。インターネット接続が必要です。</li>
+    </ol>
+
+    <h2>アプリを使えないとき</h2>
+    <p><a href="mailto:mycrewdeveloper@gmail.com">mycrewdeveloper@gmail.com</a> に「アカウント削除依頼」と、ログインに使ったメールアドレス(Apple の「メールを非公開」を使った場合はそのアドレス)とログイン方法(Google・Apple)をお送りください。本人確認のうえ30日以内に削除し、結果をお知らせします。</p>
+
+    <h2>削除される情報</h2>
+    <ul>
+      <li>ログインアカウント情報:メールアドレス、名前、プロフィール写真のアドレス、ログイン方法、利用者識別子</li>
+      <li>サーバーに同期されたメモすべて:本文・書式・チェックリスト、装飾(テーマ・フォント・色など)、ボード上の位置・大きさ、リマインダーの時刻、ボードの一覧</li>
+    </ul>
+    <p>アプリで削除すると、サーバーのメモを先に消してからアカウントをすぐに削除します。サービス提供者(Google Firebase)のバックアップからは、その提供者のポリシーに従って削除されます。</p>
+
+    <h2>残る情報</h2>
+    <ul>
+      <li>その端末のメモは、ログインしていない状態で端末に残ります(サーバーには送りません)。不要ならアプリで削除するか、アプリを削除してください。</li>
+      <li>プレミアムの購入記録は Google Play・App Store のアカウントに残り、運営者は削除できません。アカウントを削除してもプレミアムはそのまま使えます。</li>
+    </ul>
+    <p><a href="privacy.html#en">Privacy Policy</a></p>
+  </section>
+
+  <section id="zh" lang="zh-CN">
+    <h1>删除贴贴账户</h1>
+    <p class="sub">应用：贴贴 (Stickit) · 开发者：ToyDream</p>
+    <p>只有在开启高级版“多设备同步”并用 Google 或 Apple 登录时才会创建账户。如果从未登录，服务器上没有你的任何信息，也就没有需要删除的账户。</p>
+
+    <h2>在应用中删除</h2>
+    <ol>
+      <li>打开贴贴，点右上角的<strong>设置</strong>。</li>
+      <li>在<strong>账户</strong>中点<strong>删除账户</strong>。</li>
+      <li>确认后删除。需要连接网络。</li>
+    </ol>
+
+    <h2>无法使用应用时</h2>
+    <p>请发送邮件至 <a href="mailto:mycrewdeveloper@gmail.com">mycrewdeveloper@gmail.com</a>，注明“删除账户请求”，并附上登录时使用的邮箱地址（如使用了 Apple 的“隐藏邮件地址”，请提供该地址）和登录方式（Google 或 Apple）。核实身份后，我们会在 30 天内删除并告知结果。</p>
+
+    <h2>会被删除的信息</h2>
+    <ul>
+      <li>登录账户信息：邮箱地址、姓名、头像地址、登录方式、用户标识符</li>
+      <li>同步到服务器的全部便签：文字、格式、清单，装饰（主题、字体、颜色等），看板上的位置和大小，提醒时间，看板列表</li>
+    </ul>
+    <p>在应用中删除时，会先删除服务器上的便签，然后立即删除账户。服务提供方（Google Firebase）备份中的副本将按其政策删除。</p>
+
+    <h2>会保留的信息</h2>
+    <ul>
+      <li>该设备上的便签会以未登录状态保留在设备上（不会发送到服务器）。如不需要，可在应用中删除或卸载应用。</li>
+      <li>高级版购买记录保留在你的 Google Play 或 App Store 账户中，我们无法删除。删除账户后仍可继续使用高级版。</li>
+    </ul>
+    <p><a href="privacy.html#en">Privacy Policy</a></p>
+  </section>
+
+  <footer>© 2026 ToyDream</footer>
+</main>
+</body>
+</html>
