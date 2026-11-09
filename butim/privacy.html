@@ -52,6 +52,7 @@
       <tr><th>수집 항목</th><th>목적</th><th>보유 기간</th></tr>
       <tr><td>로그인 계정 정보: 이메일 주소, 이름, 프로필 사진 주소(Google·Apple이 알려 주는 범위), 로그인 방식, 서비스 이용자 식별자</td><td>로그인, 본인 확인, 계정 관리</td><td>계정을 삭제할 때까지</td></tr>
       <tr><td>동기화하는 메모: 글과 서식, 체크리스트, 색·테마·글꼴·속지·부착물·기울기, 보드 위치·크기, 알림 시각·반복, 만든·고친 시각, 삭제 여부, 보드 이름과 메모가 놓인 보드</td><td>같은 계정으로 로그인한 여러 기기에서 메모를 맞추기</td><td>계정을 삭제할 때까지. 지운 메모는 30일 뒤 서버에서도 지웁니다</td></tr>
+      <tr><td>동기화 정보: 기기 종류(Android·iOS), 앱 버전, 언어, 메모·보드 개수, 마지막 동기화 시각 (메모 글과 보드 이름은 포함하지 않음)</td><td>고객 지원, 서비스 운영 현황 파악</td><td>계정을 삭제할 때까지</td></tr>
       <tr><td>로그인할 때 서비스 운영에 필요한 접속 정보(IP 주소 등)</td><td>부정 이용 방지, 보안</td><td>Google(Firebase)의 정책에 따름</td></tr>
     </table></div>
     <ul>
@@ -142,6 +143,7 @@
     <ul>
       <li><strong>Account information:</strong> email address, name and profile photo URL (as provided by Google or Apple), sign-in method and a user identifier — to sign you in and manage your account, kept until you delete your account.</li>
       <li><strong>Synced notes:</strong> text and formatting, checklists, color, theme, font, paper, attachment, tilt, board position and size, reminder time and repeat, created/edited times, deletion status, and board names and which board each note is on — to keep your notes in step across devices signed in to the same account, kept until you delete your account. Deleted notes are removed from the server after 30 days.</li>
+      <li><strong>Sync information:</strong> device type (Android or iOS), app version, language, number of notes and boards, and last sync time (never note text or board names) — for support and to understand how the service is used, kept until you delete your account.</li>
       <li><strong>Connection information</strong> such as IP address when you sign in — for security and abuse prevention, under Google's (Firebase's) policies.</li>
     </ul>
     <p>If you choose “Hide My Email” with Apple, we receive an Apple relay address. Signing out removes the notes from that device but does not delete them from the server. To delete everything, use Settings &gt; Account &gt; Delete account: we delete your notes on the server, then your account, and keep your notes on that device as signed-out notes. You can also email us; see <a href="delete-account.html">how to delete your account</a>. If Premium ends (for example, after a refund), sync stops and notes already on the server stay until you delete your account.</p>
