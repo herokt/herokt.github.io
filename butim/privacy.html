@@ -36,12 +36,12 @@
 
   <section id="ko" lang="ko">
     <h1>붙임 개인정보처리방침</h1>
-    <p class="date">시행일: 2026년 11월 2일</p>
+    <p class="date">시행일: 2026년 11월 16일 (이전: 2026년 11월 2일)</p>
     <p>ToyDream(이하 “운영자”)은 붙임 앱(영문명 Stickit, 일본어명 ペタッと, 중국어명 贴贴/貼貼, 이하 “앱”)을 운영하면서 이용자의 개인정보를 다음과 같이 처리합니다.</p>
 
     <h2>1. 메모</h2>
     <ul>
-      <li>로그인하지 않으면 앱에서 쓴 메모와 그 모양(색·테마·위치 등)은 <strong>이용자 기기에만</strong> 저장되며, 운영자나 다른 곳으로 전송되지 않습니다. 앱을 지우면 메모도 함께 지워집니다.</li>
+      <li>로그인하지 않으면 앱에서 쓴 메모와 그 모양(색·테마·위치 등)은 <strong>이용자 기기에만</strong> 저장되며, 운영자나 다른 곳으로 전송되지 않습니다. 앱을 지우면 메모도 함께 지워집니다. 다만 사용 통계를 켜 두면 메모 글을 뺀 꾸미기 종류의 개수만 익명으로 보냅니다(아래 5).</li>
       <li>이용자가 직접 '공유'한 메모(글·이미지)는 이용자가 고른 앱으로만 전달되며, 운영자에게는 전송되지 않습니다.</li>
       <li>프리미엄 이용자가 '여러 기기 동기화'를 켜고 로그인한 경우에만 메모가 서버에 저장됩니다(아래 2).</li>
     </ul>
@@ -62,15 +62,16 @@
     </ul>
 
     <h2>3. 처리 위탁과 국외 이전</h2>
-    <p>로그인과 동기화를 위해 아래와 같이 개인정보를 맡기고, 그 과정에서 국외로 이전합니다.</p>
+    <p>로그인·동기화·사용 통계를 위해 아래와 같이 개인정보를 맡기고, 그 과정에서 국외로 이전합니다.</p>
     <div class="table-wrap"><table>
       <tr><th>받는 자</th><th>맡기는 일</th><th>이전하는 나라</th><th>이전 항목</th><th>이전 시점·방법</th><th>보유 기간</th></tr>
       <tr><td>Google LLC (Firebase Authentication)</td><td>로그인, 계정 관리</td><td>미국</td><td>2의 로그인 계정 정보, 접속 정보</td><td>로그인할 때 인터넷으로</td><td>계정을 삭제할 때까지</td></tr>
+      <tr><td>Google LLC (Google Analytics for Firebase)</td><td>사용 통계 집계</td><td>미국</td><td>5의 사용 통계</td><td>사용 통계가 켜져 있는 동안 앱을 쓸 때 인터넷으로</td><td>수집한 날부터 최대 14개월</td></tr>
       <tr><td>Google LLC (Cloud Firestore)</td><td>동기화 메모 보관</td><td>일본(도쿄)</td><td>2의 동기화하는 메모</td><td>동기화가 켜져 있는 동안 메모를 고칠 때 인터넷으로</td><td>계정을 삭제할 때까지</td></tr>
     </table></div>
     <ul>
       <li>Google로 로그인하면 Google LLC가, Apple로 로그인하면 Apple Inc.가 로그인 과정에서 이용자의 계정을 확인합니다.</li>
-      <li>국외 이전을 원하지 않으면 로그인하지 않으면 됩니다. 이 경우 동기화를 뺀 모든 기능을 그대로 쓸 수 있습니다.</li>
+      <li>국외 이전을 원하지 않으면 로그인하지 않고 사용 통계를 끄면 됩니다. 이 경우 동기화를 뺀 모든 기능을 그대로 쓸 수 있습니다.</li>
       <li><a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a></li>
     </ul>
 
@@ -85,43 +86,56 @@
       <li>기기 설정에서 광고 ID를 재설정하거나 맞춤 광고를 끌 수 있습니다. (Android: 설정 &gt; Google &gt; 광고 / iOS: 설정 &gt; 개인정보 보호 및 보안 &gt; 추적)</li>
     </ul>
 
-    <h2>5. 결제(프리미엄)</h2>
+    <h2>5. 사용 통계</h2>
+    <p>어떤 꾸미기(테마·글꼴·속지·부착물·색·기울기)가 많이 쓰이고 어떤 것이 쓰이지 않는지 알아 앱을 고치기 위해, Google Analytics for Firebase로 아래 정보를 익명으로 수집합니다. <strong>메모 글과 서식은 보내지 않습니다.</strong></p>
+    <div class="table-wrap"><table>
+      <tr><th>수집 항목</th><th>목적</th><th>보유 기간</th></tr>
+      <tr><td>꾸미기 사용 기록: 메모에 쓰인 꾸미기 종류별 개수(하루 한 번), 메모 수, 꾸미기 창을 연 것, 고르거나 되돌린 꾸미기 종류, 잠긴 꾸미기를 누른 것</td><td>옵션 추가·정리 판단, 앱 개선</td><td>수집한 날부터 최대 14개월</td></tr>
+      <tr><td>Google Analytics가 함께 수집하는 정보: 앱 인스턴스 ID(앱을 설치할 때 만들어지는 임의의 값), 기기 정보(기종·운영체제·언어), 앱 버전, 국가·지역(IP 주소로 추정), 앱 첫 실행·사용 시간</td><td>통계 집계</td><td>수집한 날부터 최대 14개월</td></tr>
+    </table></div>
+    <ul>
+      <li>광고 ID는 수집하지 않으며, 이 정보를 광고나 맞춤 광고에 쓰지 않습니다. 로그인 계정과 연결하지 않습니다.</li>
+      <li>앱 설정 &gt; 정보 &gt; '사용 통계 보내기'를 끄면 그때부터 보내지 않습니다.</li>
+      <li>유럽 경제 지역·영국·스위스에서는 처음 실행할 때 묻는 동의를 받은 경우에만 보냅니다.</li>
+    </ul>
+
+    <h2>6. 결제(프리미엄)</h2>
     <p>프리미엄은 한 번 결제하는 인앱 상품이며, 결제는 Google Play 또는 App Store가 처리합니다. 운영자는 카드 번호 등 결제 수단 정보나 구매자 정보를 받지 않습니다. 앱은 프리미엄을 켜기 위해 기기에서 스토어의 구매 기록만 확인합니다. 프리미엄은 로그인 계정이 아니라 스토어 계정을 따라갑니다.</p>
 
-    <h2>6. 권한</h2>
+    <h2>7. 권한</h2>
     <p>앱은 위치·연락처·사진·마이크·카메라 권한을 요청하지 않습니다. 홈 화면 위젯은 기기 안에서만 메모를 보여 줍니다.</p>
     <ul>
       <li>알림: 리마인더와 알림창 고정을 쓸 때 알림 권한을, 정한 시각에 울리도록 Android의 '알람 및 리마인더' 허용을 요청할 수 있습니다. 알림은 기기 안에서 예약되며 운영자에게 전송되지 않습니다.</li>
       <li>iOS에서 위젯을 배경화면과 하나로 보이게 하려고 이용자가 직접 고른 홈 화면 스크린샷은 기기 안에만 저장됩니다(사진 보관함 전체 접근 권한은 요청하지 않습니다).</li>
     </ul>
 
-    <h2>7. 아동</h2>
+    <h2>8. 아동</h2>
     <p>앱은 만 13세(대한민국은 만 14세) 미만 아동을 대상으로 하지 않으며, 이 나이 미만의 아동이 로그인하지 않도록 안내합니다.</p>
 
-    <h2>8. 개인정보의 파기</h2>
+    <h2>9. 개인정보의 파기</h2>
     <ul>
       <li>계정을 삭제하면 서버의 메모와 계정 정보를 바로 지웁니다. 서비스 제공자의 백업에서는 그 제공자의 정책에 따라 지워집니다.</li>
       <li>지운 메모는 30일 동안 휴지통에 두었다가 기기와 서버에서 지웁니다.</li>
     </ul>
 
-    <h2>9. 이용자의 권리와 연락처</h2>
+    <h2>10. 이용자의 권리와 연락처</h2>
     <p>이용자는 언제든 자신의 개인정보를 열람·정정·삭제하거나 처리 정지를 요청할 수 있습니다. 메모는 앱에서 직접 고치거나 지울 수 있고, 계정과 서버의 메모는 앱의 '계정 삭제'로 지울 수 있습니다. 그 밖의 문의·요청은 아래로 연락해 주세요.</p>
     <ul>
       <li>개인정보 보호책임자: ToyDream</li>
       <li>이메일: <a href="mailto:mycrewdeveloper@gmail.com">mycrewdeveloper@gmail.com</a></li>
     </ul>
 
-    <h2>10. 바뀔 때</h2>
+    <h2>11. 바뀔 때</h2>
     <p>이 방침이 바뀌면 시행 7일 전에 앱 또는 이 페이지에서 바뀐 내용을 알립니다.</p>
   </section>
 
   <section id="en" lang="en">
     <h1>Stickit Privacy Policy</h1>
-    <p class="date">Effective date: November 2, 2026</p>
+    <p class="date">Effective date: November 16, 2026 (previous: November 2, 2026)</p>
     <p>ToyDream (“we”) operates the Stickit app (붙임 / ペタッと / 贴贴 / 貼貼, the “App”).</p>
 
     <h2>Your notes</h2>
-    <p>If you don't sign in, your notes and their appearance are stored only on your device and are never sent to us or anyone else; uninstalling the App deletes them. Notes you choose to share (as text or an image) go only to the app you pick. Notes are stored on a server only if you are a Premium user who turns on sync and signs in.</p>
+    <p>If you don't sign in, your notes and their appearance are stored only on your device and are never sent to us or anyone else; uninstalling the App deletes them. If usage statistics are on, only anonymous counts of decoration types (never note text) are sent; see Usage statistics below. Notes you choose to share (as text or an image) go only to the app you pick. Notes are stored on a server only if you are a Premium user who turns on sync and signs in.</p>
 
     <h2>Sign-in and sync (Premium, optional)</h2>
     <p>Signing in is optional; every feature except sync works without it. When you sign in with Google or Apple to turn on sync, we process:</p>
@@ -138,6 +152,14 @@
     <h2>Ads</h2>
     <p>Free users see Google AdMob ads at the top of the board screen (Premium has no ads). To show and measure ads, Google may collect your advertising ID, device information (model, OS, language), IP address (approximate location), ad views and clicks, and crash information. We do not receive or store this information. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner sites</a>.</p>
     <p>In the EEA, the UK and Switzerland we ask for consent before showing ads; you can change it any time in Settings &gt; About &gt; Ad privacy settings. You can reset your advertising ID or opt out of personalized ads in your device settings.</p>
+
+    <h2>Usage statistics</h2>
+    <p>To learn which decorations (theme, font, paper, attachment, color, tilt) are used and which are not, so we can improve the App, we collect the following anonymously with Google Analytics for Firebase (Google LLC, United States). <strong>Note text and formatting are never sent.</strong></p>
+    <ul>
+      <li><strong>Decoration usage:</strong> how many notes use each decoration type (once a day), number of notes, opening the decoration panel, decorations picked or undone, and taps on locked decorations.</li>
+      <li><strong>Collected automatically by Google Analytics:</strong> app instance ID (a random value created on install), device information (model, OS, language), app version, country/region (estimated from IP address), first open and engagement time.</li>
+    </ul>
+    <p>This data is kept for up to 14 months. We do not collect your advertising ID, use this data for ads, or link it to your sign-in account. Turn it off any time in Settings &gt; About &gt; Send usage statistics. In the EEA, the UK and Switzerland it is sent only if you consent when first asked.</p>
 
     <h2>Purchases</h2>
     <p>Premium is a one-time in-app purchase processed by Google Play or the App Store. We never receive your payment details or buyer information; the App only checks the store's purchase record on your device to turn Premium on. Premium follows your store account, not your sign-in account.</p>
