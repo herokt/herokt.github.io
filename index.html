@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소소랩 SoSoLab</title>
+  <meta name="description" content="소소랩(SoSoLab)은 작은 앱을 하나씩 만들어 쌓아 가는 1인 앱 스튜디오입니다.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="소소랩 SoSoLab">
+  <meta property="og:description" content="작은 앱을 하나씩 쌓아 올립니다 · Small apps, stacked one by one.">
+  <meta property="og:image" content="https://herokt.github.io/assets/sosolab-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap">
+  <style>
+    :root { --bg: #ECEAF6; --card: #FFFFFF; --ink: #2B2F6B; --muted: #626783; --line: #DCD9EC; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #22264A; --card: #2B2F57; --ink: #F3F1FA; --muted: #B4B6D0; --line: #3A3F6E; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Noto Sans KR", system-ui, sans-serif; line-height: 1.6; }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px 64px; display: grid; gap: 32px; }
+    .brand { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .brand svg { width: 96px; height: auto; }
+    .brand .en { font-family: Fredoka, sans-serif; font-weight: 600; font-size: 52px; line-height: 1; }
+    .brand .ko { font-family: Jua, sans-serif; font-size: 24px; opacity: .72; margin-top: 6px; }
+    .lead { margin: 0; color: var(--muted); }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+    li a { display: flex; justify-content: space-between; gap: 12px; padding: 14px 18px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; color: inherit; text-decoration: none; }
+    li a:hover, li a:focus-visible { border-color: #DE8A1F; outline: none; }
+    li span { color: var(--muted); font-size: 14px; }
+    footer { color: var(--muted); font-size: 14px; }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <svg viewBox="20 16 82 90" role="img" aria-label="소소랩 로고">
+        <ellipse cx="48.6" cy="99" rx="25" ry="3.6" fill="#2B2F6B" fill-opacity=".14"/>
+        <g transform="translate(-1.4 1.75)">
+          <path d="M50 38 L74.25 52 L50 66 L25.75 52 Z" fill="#FFD35A"/>
+          <path d="M25.75 52 L50 66 L50 94 L25.75 80 Z" fill="#F5AE3D"/>
+          <path d="M50 66 L74.25 52 L74.25 80 L50 94 Z" fill="#DE8A1F"/>
+          <path d="M84 22.5 L97 30 L84 37.5 L71 30 Z" fill="#FF9A80"/>
+          <path d="M71 30 L84 37.5 L84 52.5 L71 45 Z" fill="#F26B4F"/>
+          <path d="M84 37.5 L97 30 L97 45 L84 52.5 Z" fill="#CC4B33"/>
+        </g>
+      </svg>
+      <div><div class="en">SoSoLab</div><div class="ko">소소랩</div></div>
+    </div>
+    <p class="lead">작은 앱을 하나씩 쌓아 올립니다. Small apps, stacked one by one.</p>
+    <ul>
+      <li><a href="https://harugrim-herokt.web.app/">하루그림 · HaruGrim <span>AI 그림일기</span></a></li>
+      <li><a href="/butim/">붙임 · Stickit <span>포스트잇 메모 위젯</span></a></li>
+      <li><a href="/slidemates/">다같이 미끄럼 · Slide Mates <span>퍼즐</span></a></li>
+      <li><a href="/zonber/">ZONBER <span>탄막 생존 게임</span></a></li>
+      <li><a href="/bladecrawl/privacy.html">칼의 던전 · Blade Crawl <span>로그라이크</span></a></li>
+      <li><a href="https://myfootball-fc65e.web.app/">Football Crew <span>축구 크루 관리</span></a></li>
+    </ul>
+    <footer>문의 · Contact: mycrewdeveloper@gmail.com</footer>
+  </main>
+</body>
+</html>
