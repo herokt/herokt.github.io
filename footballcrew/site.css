@@ -1,0 +1,89 @@
+:root {
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --text: #16181d;
+  --muted: #5f6673;
+  --primary: #1a1a2e;
+  --on-primary: #ffffff;
+  --line: #dde0e6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1016;
+    --card: #1a1a2e;
+    --text: #eef0f4;
+    --muted: #a3a9b6;
+    --primary: #eef0f4;
+    --on-primary: #1a1a2e;
+    --line: #2d2f45;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px 24px;
+  border-radius: 16px;
+  background: var(--card);
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo { border-radius: 16px; object-fit: cover; }
+h1 { margin: 16px 0 8px; font-size: 24px; overflow-wrap: anywhere; }
+.subtitle { margin: -4px 0 8px; font-weight: 600; }
+.subtitle[hidden] { display: none; }
+.muted { color: var(--muted); line-height: 1.5; }
+.small { font-size: 13px; }
+
+.code-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.code-box[hidden] { display: none; }
+.label { font-size: 13px; color: var(--muted); }
+.code { font-size: 28px; letter-spacing: 6px; font-variant-numeric: tabular-nums; }
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn.primary { background: var(--primary); color: var(--on-primary); }
+.btn.secondary { background: transparent; color: var(--text); border-color: var(--line); }
+.code-box .btn { width: auto; margin: 0; padding: 8px 16px; font-size: 14px; }
+
+.stores { display: flex; gap: 8px; }
+.stores .btn { flex: 1; }
+
+footer { margin-top: 16px; font-size: 13px; }
+footer a { color: var(--muted); }

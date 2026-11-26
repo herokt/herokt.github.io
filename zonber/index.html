@@ -1,80 +1,115 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zonber - 앱 지원 (App Support)</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            color: #333;
-        }
-
-        header {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            margin: 0;
-            color: #007AFF;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .contact-email {
-            background: #f5f5f7;
-            padding: 15px;
-            border-radius: 8px;
-            display: inline-block;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZONBER Support</title>
+<meta name="description" content="ZONBER: Dodge &amp; Survive — support, FAQ and contact">
+<meta name="apple-itunes-app" content="app-id=6757195275">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root { --bg: #0b0d12; --surface: #151922; --line: #262c38; --text: #f2f4f8; --dim: #9aa3b2; --accent: #37e0ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6;
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans", "PingFang SC", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  header img { width: 48px; height: 48px; border-radius: 12px; }
+  header b { font-size: 20px; letter-spacing: 2px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  nav button { background: var(--surface); color: var(--dim); border: 1px solid var(--line); border-radius: 999px;
+               padding: 6px 14px; font-size: 14px; cursor: pointer; }
+  nav button.on { color: #041018; background: var(--accent); border-color: var(--accent); font-weight: 700; }
+  h1 { font-size: 24px; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 32px 0 12px; }
+  p { color: var(--dim); margin: 0 0 12px; }
+  .tip { font-size: 14px; }
+  a { color: var(--accent); }
+  a.btn { display: block; text-align: center; padding: 14px 16px; margin: 16px 0 10px; border-radius: 14px;
+          background: var(--accent); color: #041018; font-weight: 800; text-decoration: none; word-break: break-all; }
+  details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 8px; }
+  summary { cursor: pointer; font-weight: 700; }
+  details p { margin: 10px 0 0; }
+  .links { margin-top: 28px; font-size: 14px; }
+  footer { margin-top: 40px; font-size: 13px; color: var(--dim); }
+  footer a { margin-right: 12px; }
+</style>
 </head>
-
 <body>
-    <header>
-        <h1>Zonber</h1>
-        <p>A dynamic survival game where you dodge and weave through obstacles.</p>
-    </header>
+<main>
+  <header><img src="icon.png" alt=""><b>ZONBER</b></header>
+  <nav><button type="button" data-pick="en">English</button><button type="button" data-pick="ko">한국어</button><button type="button" data-pick="ja">日本語</button><button type="button" data-pick="zh">中文</button></nav>
+  
+<section lang="en" data-lang="en">
+  <h1>ZONBER Support</h1>
+  <p>Questions, bug reports or account requests? Email us and we will reply within 3 business days.</p>
+  <a class="btn" href="mailto:mycrewdeveloper@gmail.com?subject=%5BZONBER%5D%20ZONBER%20Support">Contact us — mycrewdeveloper@gmail.com</a>
+  <p class="tip">Please include your nickname, device model and app version (Profile tab, bottom).</p>
+  <h2>FAQ</h2>
+  <details><summary>My records or coins disappeared.</summary><p>Records, coins and badges are saved only when you are signed in with Google or Apple. Playing as a guest saves nothing. Sign in with the same account you used before to get them back.</p></details>
+  <details><summary>How do I delete my account?</summary><p>Go to Profile tab › Account › Delete account. Your profile, records and friends are removed permanently. You can also email us to request deletion.</p></details>
+  <details><summary>How do I turn off notifications?</summary><p>Profile tab › Settings — turn off the weekly reminder, event &amp; news notifications or friend notifications.</p></details>
+  <details><summary>How do I use a friend code or event code?</summary><p>Sign in, then open the event banner on the home screen and enter the code. Each code can be used once per account.</p></details>
+  <details><summary>Someone in the rankings is cheating.</summary><p>Email us with the zone, nickname and period (weekly / monthly / yearly). We review every report.</p></details>
+  <p class="links"><a href="privacy.html">Privacy Policy</a></p>
+</section>
 
-    <div class="section">
-        <h2>지원 및 문의 (Support)</h2>
-        <p>Zonber 앱을 사용해주셔서 감사합니다. 앱 사용 중 문제가 발생하거나 궁금한 점이 있으시면 아래 이메일로 연락주세요.</p>
-        <p>Thank you for using Zonber. If you encounter any issues or have questions, please contact us via email below.
-        </p>
+<section lang="ko" data-lang="ko">
+  <h1>ZONBER 고객 지원</h1>
+  <p>궁금한 점, 버그 제보, 계정 관련 요청은 메일로 보내 주세요. 영업일 기준 3일 안에 답장드립니다.</p>
+  <a class="btn" href="mailto:mycrewdeveloper@gmail.com?subject=%5BZONBER%5D%20ZONBER%20%EA%B3%A0%EA%B0%9D%20%EC%A7%80%EC%9B%90">문의하기 — mycrewdeveloper@gmail.com</a>
+  <p class="tip">닉네임, 기기 모델, 앱 버전(프로필 탭 맨 아래)을 함께 적어 주시면 더 빨리 도와드릴 수 있어요.</p>
+  <h2>자주 묻는 질문</h2>
+  <details><summary>기록이나 코인이 사라졌어요.</summary><p>기록·코인·뱃지는 Google 또는 Apple 로 로그인했을 때만 저장됩니다. 게스트로 플레이하면 아무것도 저장되지 않아요. 예전에 쓰던 계정으로 다시 로그인하면 돌아옵니다.</p></details>
+  <details><summary>계정은 어떻게 삭제하나요?</summary><p>프로필 탭 › 계정 › 계정 삭제에서 지울 수 있습니다. 프로필·기록·친구가 영구히 삭제됩니다. 메일로 삭제를 요청하셔도 됩니다.</p></details>
+  <details><summary>알림을 끄고 싶어요.</summary><p>프로필 탭 › 설정에서 주간 알림, 이벤트·소식 알림, 친구 알림을 각각 끌 수 있습니다.</p></details>
+  <details><summary>친구 코드·이벤트 코드는 어디에 넣나요?</summary><p>로그인한 뒤 홈 화면의 이벤트 배너를 눌러 코드를 입력하세요. 코드는 계정당 한 번만 쓸 수 있어요.</p></details>
+  <details><summary>랭킹에 부정 기록이 있어요.</summary><p>존, 닉네임, 기간(주간·월간·연간)을 적어 메일로 알려 주세요. 모든 제보를 확인합니다.</p></details>
+  <p class="links"><a href="privacy.html">개인정보 처리방침</a></p>
+</section>
 
-        <div class="contact-email">
-            📧 Support Email: mycrewdeveloper@gmail.com
-        </div>
-    </div>
+<section lang="ja" data-lang="ja">
+  <h1>ZONBER サポート</h1>
+  <p>ご質問、不具合の報告、アカウントに関するご依頼はメールでお送りください。3営業日以内に返信します。</p>
+  <a class="btn" href="mailto:mycrewdeveloper@gmail.com?subject=%5BZONBER%5D%20ZONBER%20%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88">お問い合わせ — mycrewdeveloper@gmail.com</a>
+  <p class="tip">ニックネーム、端末の機種、アプリのバージョン（プロフィールタブの一番下）を書いていただくと、より早く対応できます。</p>
+  <h2>よくある質問</h2>
+  <details><summary>記録やコインが消えました。</summary><p>記録・コイン・バッジは、Google または Apple でログインしているときだけ保存されます。ゲストでプレイすると何も保存されません。以前のアカウントでもう一度ログインすると戻ります。</p></details>
+  <details><summary>アカウントを削除するには？</summary><p>プロフィールタブ › アカウント › アカウント削除 から削除できます。プロフィール・記録・フレンドは完全に削除されます。メールで削除をご依頼いただくこともできます。</p></details>
+  <details><summary>通知をオフにしたい。</summary><p>プロフィールタブ › 設定 で、週間リマインダー、イベント・お知らせ通知、フレンド通知をそれぞれオフにできます。</p></details>
+  <details><summary>フレンドコード・イベントコードはどこに入力しますか？</summary><p>ログイン後、ホーム画面のイベントバナーを開いてコードを入力してください。コードは1アカウントにつき1回使えます。</p></details>
+  <details><summary>ランキングに不正な記録があります。</summary><p>ゾーン、ニックネーム、期間（週間・月間・年間）をメールでお知らせください。すべての報告を確認します。</p></details>
+  <p class="links"><a href="privacy.html">プライバシーポリシー</a></p>
+</section>
 
-    <div class="section">
-        <h2>자주 묻는 질문 (FAQ)</h2>
-        <ul>
-            <li>
-                <strong>Q: 앱이 실행되지 않아요. (App crashes on launch)</strong>
-                <br>A: 최신 버전으로 업데이트 되었는지 확인해주세요. (Please check if you have the latest version.)
-            </li>
-            <li>
-                <strong>Q: 계정 데이터 삭제 요청 (Request for Data Deletion)</strong>
-                <br>A: 위의 지원 이메일로 요청해주시면 처리해 드립니다. (Please contact support email for data deletion.)
-            </li>
-        </ul>
-    </div>
-
-    <footer>
-        <p>&copy; <span class="cy">2026</span> SoSoLab. All rights reserved.</p>
-    </footer>
-<script>document.querySelectorAll(".cy").forEach(e=>e.textContent=new Date().getFullYear())</script>
+<section lang="zh" data-lang="zh">
+  <h1>ZONBER 客户支持</h1>
+  <p>如有疑问、问题反馈或账号相关请求，请发送邮件给我们，我们会在 3 个工作日内回复。</p>
+  <a class="btn" href="mailto:mycrewdeveloper@gmail.com?subject=%5BZONBER%5D%20ZONBER%20%E5%AE%A2%E6%88%B7%E6%94%AF%E6%8C%81">联系我们 — mycrewdeveloper@gmail.com</a>
+  <p class="tip">请附上你的昵称、设备型号和应用版本（“我的”页面底部），以便我们更快处理。</p>
+  <h2>常见问题</h2>
+  <details><summary>我的记录或金币不见了。</summary><p>只有使用 Google 或 Apple 登录时，记录、金币和徽章才会被保存。以游客身份游玩不会保存任何数据。使用之前的账号重新登录即可恢复。</p></details>
+  <details><summary>如何删除账号？</summary><p>前往“我的” › 账号 › 删除账号。你的资料、记录和好友将被永久删除。也可以发邮件请求删除。</p></details>
+  <details><summary>如何关闭通知？</summary><p>在“我的” › 设置 中，可以分别关闭每周提醒、活动与消息通知、好友通知。</p></details>
+  <details><summary>好友码或活动码在哪里输入？</summary><p>登录后，点击主页上的活动横幅并输入代码。每个代码每个账号只能使用一次。</p></details>
+  <details><summary>排行榜上有作弊记录。</summary><p>请通过邮件告诉我们区域、昵称和时间段（周榜 / 月榜 / 年榜），我们会核查每一条举报。</p></details>
+  <p class="links"><a href="privacy.html">隐私政策</a></p>
+</section>
+  <footer>
+    <a href="https://apps.apple.com/app/id6757195275">App Store</a>
+    <span>mycrewdeveloper@gmail.com</span>
+  </footer>
+</main>
+<script>
+  var langs = ["en","ko","ja","zh"];
+  function show(lang) {
+    document.querySelectorAll('section[data-lang]').forEach(function (s) { s.hidden = s.dataset.lang !== lang; });
+    document.querySelectorAll('nav button').forEach(function (b) { b.classList.toggle('on', b.dataset.pick === lang); });
+    document.documentElement.lang = lang;
+  }
+  var want = (new URLSearchParams(location.search).get('lang') || navigator.language || 'en').slice(0, 2).toLowerCase();
+  show(langs.indexOf(want) >= 0 ? want : 'en');
+  document.querySelectorAll('nav button').forEach(function (b) { b.onclick = function () { show(b.dataset.pick); }; });
+</script>
 </body>
-
 </html>
