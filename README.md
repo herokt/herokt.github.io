@@ -7,6 +7,7 @@ Herokt Developer Page
 | 폴더 | 앱 | 원본 |
 |---|---|---|
 | `bladecrawl/` | 칼의 던전 | 이 저장소 |
+| `nightshift/` | 야간알바 | 이 저장소 |
 | `butim/` | 붙임 | 이 저장소 |
 | `calendar/` | 한줄 캘린더 | 이 저장소 (2026-11-26 hanjul-calendar-site 저장소에서 옮김) |
 | `footballcrew/` | Football Crew | 이 저장소 (2026-11-26 Firebase Hosting 에서 옮김) |
